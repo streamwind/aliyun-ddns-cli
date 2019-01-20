@@ -116,7 +116,8 @@ func (ak *AccessKey) CheckAndUpdateRecordA(fulldomain, ipaddr string) (err error
 		return err
 	}
 	if target == nil {
-		err = ak.AddRecord(domain, rr, "A", ipaddr)
+		//err = ak.AddRecord(domain, rr, "A", ipaddr)
+		err = ak.AddRecord(domain, rr, "AAAA", ipaddr)
 	} else if target.Value != ipaddr {
 		err = ak.UpdateRecord(target.RecordId, target.RR, ipaddr)
 	}

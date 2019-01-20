@@ -17,7 +17,7 @@ const minTimeout = 2000 * time.Millisecond
 const regxIP = `([a-f0-9]{1,4}(:[a-f0-9]{1,4}){7}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){0,7}::[a-f0-9]{0,4}(:[a-f0-9]{1,4}){0,7})`
 
 var ipAPI = []string{
-	"http://www.taobao.com/help/getip.php", "http://ddns.oray.com/checkip", "http://haoip.cn",
+	"http://ip.zxinc.org/ipquery/","http://www.taobao.com/help/getip.php", "http://ddns.oray.com/checkip", "http://haoip.cn",
 	"http://cnc.synology.cn:81", "http://jpc.synology.com:81", "http://usc.synology.com:81",
 	"http://ip.6655.com/ip.aspx", "http://pv.sohu.com/cityjson?ie=utf-8", "http://whois.pconline.com.cn/ipJson.jsp",
 }
